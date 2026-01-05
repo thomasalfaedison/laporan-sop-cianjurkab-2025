@@ -1,0 +1,120 @@
+\documentclass[12pt]{report}
+\usepackage[a4paper, top=3cm, bottom=3cm, left=4cm, right=3cm]{geometry}
+\usepackage[indonesian]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{array}
+\usepackage{background}
+\usepackage{caption}
+\usepackage{enumitem}
+\usepackage{float}
+\usepackage{fontspec}
+\usepackage{graphicx}
+\usepackage[hidelinks]{hyperref}
+\usepackage{longtable}
+\usepackage{multicol}
+\usepackage{pdfpages}
+\usepackage{polyglossia}
+\usepackage{ragged2e}
+\usepackage{setspace}
+\usepackage{tabularx}
+\usepackage{titlesec}
+
+\setdefaultlanguage{indonesian}
+
+\setmainfont{Times New Roman}
+\doublespacing
+
+% format chapter
+\titleformat{\chapter} % command
+  {\fontsize{14pt}{14pt}\selectfont\bfseries\centering} % format
+  {\thechapter} % label
+  {0pt} % sep
+  {} % before-code
+
+% format section
+\titleformat{\section} % command
+  {\fontsize{12pt}{12pt}\selectfont\bfseries} % format
+  {\thesection\hspace{0.5em}} % label
+  {0pt} % sep
+  {} % before-code
+
+  % format section
+\titleformat{\subsection} % command
+  {\fontsize{12pt}{12pt}\selectfont\bfseries} % format
+  {\thesubsection\hspace{0.5em}} % label
+  {0pt} % sep
+  {} % before-code
+
+\backgroundsetup{
+  contents={}
+}
+
+\titlespacing*{\chapter}{0pt}{-0.5cm}{1cm}
+
+\begin{document}
+
+% \includepdf[pages=-]{media/sampul/sampul-pendahuluan.pdf}
+
+\pagenumbering{roman}
+\setcounter{page}{1}
+
+% \backgroundsetup{
+%   scale=1,
+%   angle=0,
+%   opacity=1,
+%   vshift=0pt, hshift=0pt,
+%   contents={\includegraphics[width=\paperwidth,height=\paperheight]{media/background.pdf}}
+% }
+
+\input{001-kata-pengantar-pendahuluan.tex}
+
+\input{002-daftar-isi.tex}
+
+\newpage
+
+\input{003-daftar-gambar.tex}
+
+\newpage
+
+\input{004-daftar-tabel.tex}
+
+\newpage
+
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
+\input{100-bab-1-pendahuluan.tex}
+
+\newpage
+
+\input{200-bab-2-tinjauan-pustaka.tex}
+
+\newpage
+
+\input{300-bab-3-metodologi-dan-mekanisme-pelaksanaan.tex}
+
+% \newpage
+
+% \input{400-bab-4-pembahasan.tex}
+
+% \input{401-rekap-perangkat-daerah.tex}
+
+% \input{402-rincian-layanan-per-perangkat-daerah.tex}
+
+% \newpage
+
+% \input{bab-5-kesimpulan-dan-rekomendasi.tex}
+
+\newpage
+
+\input{600-penutup-pendahuluan.tex}
+
+\end{document}
+
+
+
+
+
+
+

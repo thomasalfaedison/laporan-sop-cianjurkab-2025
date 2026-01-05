@@ -1,0 +1,69 @@
+\documentclass[12pt]{report}
+\usepackage[a4paper, top=3cm, bottom=3cm, left=4cm, right=3cm]{geometry}
+\usepackage[indonesian]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{array}
+\usepackage{background}
+\usepackage{caption}
+\usepackage{enumitem}
+\usepackage{float}
+\usepackage{fontspec}
+\usepackage{graphicx}
+\usepackage[hidelinks]{hyperref}
+\usepackage{longtable}
+\usepackage{multicol}
+\usepackage{pdfpages}
+\usepackage{polyglossia}
+\usepackage{ragged2e}
+\usepackage{setspace}
+\usepackage{tabularx}
+\usepackage{titlesec}
+
+\setdefaultlanguage{indonesian}
+
+\setmainfont{Times New Roman}
+\doublespacing
+
+% format chapter
+\titleformat{\chapter} % command
+  {\fontsize{14pt}{14pt}\selectfont\bfseries\centering} % format
+  {\thechapter} % label
+  {0pt} % sep
+  {} % before-code
+
+% format section
+\titleformat{\section} % command
+  {\fontsize{12pt}{12pt}\selectfont\bfseries} % format
+  {\thesection\hspace{0.5em}} % label
+  {0pt} % sep
+  {} % before-code
+
+  % format section
+\titleformat{\subsection} % command
+  {\fontsize{12pt}{12pt}\selectfont\bfseries} % format
+  {\thesubsection\hspace{0.5em}} % label
+  {0pt} % sep
+  {} % before-code
+
+\backgroundsetup{
+  contents={}
+}
+
+\titlespacing*{\chapter}{0pt}{-0.5cm}{1cm}
+
+\begin{document}
+
+\input{900-lampiran.tex}
+
+\input{901-rincian-layanan.tex}
+
+
+\end{document}
+
+
+
+
+
+
+
